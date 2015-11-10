@@ -1,6 +1,6 @@
 (function() {
   'use strict';
-  var sharedWorker = new SharedWorker('/js/shared-worker.js');
+  var sharedWorker = new SharedWorker('js/shared-worker.js');
 
   sharedWorker.port.onmessage = function(e) {
     console.log(
